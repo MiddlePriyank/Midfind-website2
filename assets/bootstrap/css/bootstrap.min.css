@@ -9548,7 +9548,8 @@ section h2 {
 }
 #mainNav {
   border-color: rgba(34, 34, 34, 0.05);
-  background-color: rgba(115, 145, 148, 0.81);
+  /* background-color: rgba(115, 145, 148, 0.81); */
+  background-color: #fff;
   /* transition: all 0.35s; */
 }
 #mainNav,
@@ -9593,14 +9594,15 @@ section h2 {
 @media (min-width: 992px) {
   #mainNav {
     border-color: transparent;
-    background-color: rgba(75, 99, 101, 0.81);
+    /* background-color: rgba(75, 99, 101, 0.81); */
+    background-color: #fff;
   }
   #mainNav .navbar-brand {
     color: fade(#fff, 70%);
   }
   #mainNav .navbar-brand:focus,
   #mainNav .navbar-brand:hover {
-    color: #fff;
+    color: #000000;
   }
   #mainNav .navbar-nav > #f58220 > a,
   #mainNav .navbar-nav > #f58220 > a:focus {
@@ -9630,8 +9632,8 @@ section h2 {
     color: #f58220;
   }
 }
-.nav-link{
-    font-size: 17px;
+.nav-link {
+  font-size: 17px;
 }
 header.masthead {
   position: relative;
