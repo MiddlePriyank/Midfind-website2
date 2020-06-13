@@ -11,3 +11,8 @@
     display: none;
   }
 }
+
+#content-stuff {
+  font-size: 29px;
+  color: #fff;
+}
