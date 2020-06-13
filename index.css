@@ -1,3 +1,7 @@
 #problem {
   padding: 0;
 }
+
+#download {
+  background-image: linear-gradient(#00757e, #e79f5f);
+}
