@@ -3929,6 +3929,7 @@ input[type="submit"].btn-block {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
+  font-weight: bold;
 }
 .nav-link:focus,
 .nav-link:hover {
@@ -3955,15 +3956,16 @@ input[type="submit"].btn-block {
   border-color: #e9ecef #e9ecef #dee2e6;
 }
 .nav-tabs .nav-link.disabled {
-  color: #6c757d;
+  color: #404244;
   background-color: transparent;
   border-color: transparent;
 }
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-  color: #495057;
-  background-color: #fff;
+  color: #2f3031;
+  background-color: rgb(54, 54, 54);
   border-color: #dee2e6 #dee2e6 #fff;
+  font-weight: bold;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -4345,7 +4347,8 @@ input[type="submit"].btn-block {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 .navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: bold;
 }
 .navbar-light .navbar-text a,
 .navbar-light .navbar-text a:focus,
@@ -9633,7 +9636,7 @@ section h2 {
   }
 }
 .nav-link {
-  font-size: 17px;
+  font-size: 19px;
 }
 header.masthead {
   position: relative;
@@ -9735,9 +9738,11 @@ section.features .device-container {
   }
 }
 section.features .feature-item {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
+  box-shadow: black;
+  border-bottom: inset;
 }
 section.features .feature-item h3 {
   font-size: 30px;

@@ -47,11 +47,9 @@ header.masthead {
   background-size: cover;
   background-repeat: no-repeat;
   backface-visibility: hidden;
-  animation: slideBg 15s linear infinite 1s;
-  animation-timing-function: ease;
-  /* background-image: url(./images/1.jpg); */
+  padding: 0;
 }
-
+/*
 @keyframes slideBg {
   0% {
     background-image: url("./images/1.jpg");
@@ -62,4 +60,17 @@ header.masthead {
   100% {
     background-image: url("./images/3.png");
   }
+}
+
+#features {
+}
+
+.text-muted {
+  font-size: 15px;
+} */
+
+.feature-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: black;
 }

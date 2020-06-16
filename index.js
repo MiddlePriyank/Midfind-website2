@@ -37,7 +37,6 @@
 //   }
 // }
 // backgroundSequence();
-$("header.masthead").bgswitcher({
-  images: ["./images/2.jpeg", "./images/3.png", "./images/1.jpg"],
-  loop: true,
+$(".carousel").carousel({
+  interval: 5000,
 });
