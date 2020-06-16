@@ -37,6 +37,81 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
     />
+    <style type="text/css">
+      body {
+        margin: 0;
+        background: #e6e6e6;
+      }
+      .showSlide {
+        display: none;
+      }
+      .showSlide img {
+        width: 100%;
+      }
+      .slidercontainer {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      .left,
+      .right {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+      }
+      .right {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .left:hover,
+      .right:hover {
+        background-color: rgba(115, 115, 115, 0.8);
+      }
+      .content {
+        color: #eff5d4;
+        font-size: 30px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        text-align: center;
+      }
+      .active {
+        background-color: #717171;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
 
   <body id="page-top">
@@ -137,22 +212,52 @@
         style="max-width: 100%; height: auto; width: auto;"
       />
     </section>
-    <section id="download" class="download text-center">
-      <div class="container">
+
+    <!-- <section id="experimentation " class="masthead">
+      <!-- <div id="texttop">
+        <h1>True Cross-Fade Background Images</h1>
+        <p>
+          A repeating sequence of fullscreen background images, pushed all the
+          way to the root element. Crossfading effect in Webkit-derived browsers
+          (Chrome, Safari, Opera).
+        </p>
+      </div> -->
+    <!-- <p id="cf_onclick">Click me to toggle</p> -->
+    <!-- <section>
+        <img class="bottom" src="./images/1.jpg" />
+        <img class="top" src="/images/2.jpeg" />
+      <!-- </section> -->
+    <!-- </section>  -->
+
+    <section id="vision" class="download text-center">
+      <div class="container" id="vision-container">
         <div class="row">
           <div class="col-md-12 mx-auto">
-            <p class="section-heading" id="content-stuff">
-              We provide logistic support and a platform for these
-              micro-industries to grow and deliver their products all over
-              India!<br />
-              As a buyer, you would get the local products at the best price,
-              delivered at your doorstep!
-            </p>
-            <p>
-              Our app is available on any mobile device! Download now to get
-              started!
-            </p>
-            <div class="badges">
+            <p class="section-heading" id="content-stuff">Our Vision<br /></p>
+            <div id="text-stuff">
+              <ul style="list-style: square;">
+                <li>
+                  Our aim is to bridge the gap between the MSMEs and the
+                  large-scale industries by providing them a platform to give
+                  their businesses an impetus.
+                </li>
+                <li>
+                  We create a virtual-market on our App, connecting retailers
+                  from all over India to connect with small manufacturers with
+                  high-quality products
+                </li>
+                <li>
+                  With logistics taken care of by the platform, we aim at making
+                  the supply-chain more robust and favourable for the
+                  small-scale manufacturers
+                </li>
+                <li>
+                  The retailers would find high-quality products manufactured by
+                  MSMEs at great prices as we would eliminate any middle-men
+                </li>
+              </ul>
+            </div>
+            <!-- <div class="badges">
               <a class="badge-link" href="#"
                 ><img
                   src="assets/img/google-play-badge.svg?h=7d81478f4f9fda85b994e6cadcaf5c38" /></a
@@ -160,7 +265,7 @@
                 ><img
                   src="assets/img/app-store-badge.svg?h=b09d63f535cc5e26fd9d14e7a3648880"
               /></a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -168,14 +273,55 @@
 
     <section id="features" class="features">
       <div class="container">
-        <div class="section-heading text-center">
+        <div class="section-heading text-center" style="margin: 0px;">
           <h2>Expand markets, get the best prices!</h2>
           <p class="text-muted">
             Check out what you can do with this app!
           </p>
           <hr />
         </div>
+
         <div class="row">
+          <div class="col-lg-4 my-auto">
+            <div class="container-fluid">
+              <div class="col-lg-12">
+                <div class="feature-item">
+                  <!-- <i class="whatsapp icon" style="margin: 0;"> </i> -->
+                  <i class="large icons">
+                    <i class="whatsapp icon"></i>
+                  </i>
+                  <h3>Whatsapp Integrated market</h3>
+                  <p class="text-muted">
+                    All the features of the App can be accessed from Whatsapp
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="feature-item">
+                  <!-- <i class="whatsapp icon" style="margin: 0;"> </i> -->
+                  <i class="large icons">
+                    <i class="rupee icon"></i>
+                  </i>
+                  <h3>Credit-based System</h3>
+                  <p class="text-muted">
+                    Buy first, pay later with our Credit-based system
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <div class="feature-item">
+                  <i class="large icons">
+                    <i class="handshake outline icon"></i>
+                  </i>
+                  <h3>Online Market-place</h3>
+                  <p class="text-muted">
+                    Bringing together buyers and sellers from all over India
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-4 my-auto">
             <div class="device-container">
               <div class="device-mockup iphone6_plus portrait white">
@@ -195,57 +341,54 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-8 my-auto">
+          <div class="col-lg-4 my-auto">
             <div class="container-fluid">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="icon-screen-smartphone text-primary"></i>
-                    <h3>Simple-to-use interface</h3>
-                    <p class="text-muted">
-                      Put an image, video, animation, or anything else in the
-                      screen
-                    </p>
-                  </div>
+              <!-- <div class="row"> -->
+              <div class="col-lg-12">
+                <div class="feature-item">
+                  <i class="icon-screen-smartphone text-primary"></i>
+                  <h3>Simple-to-use Interface</h3>
+                  <p class="text-muted">
+                    Everything is just one click away!
+                  </p>
                 </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="large icons">
-                      <i class="credit card icon" style="border: 0;"></i>
-                    </i>
-                    <h3>Integrated payment gateway</h3>
-                    <p class="text-muted">
-                      Payments through a secure gateway, with cashbacks on each
-                      transaction
-                    </p>
-                  </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="feature-item">
+                  <i class="large icons">
+                    <i class="list icon" style="border: 0;"></i>
+                  </i>
+                  <h3>Inventory System</h3>
+                  <p class="text-muted">
+                    Manage your inventory inside the App!
+                  </p>
                 </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <!-- <i class="whatsapp icon" style="margin: 0;"> </i> -->
-                    <i class="large icons">
-                      <i class="whatsapp icon"></i>
-                    </i>
-                    <h3>Whatsapp Integrated market</h3>
-                    <p class="text-muted">
-                      All the features of the App can be accessed from Whatsapp
-                    </p>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="feature-item">
-                    <i class="large icons">
-                      <i class="handshake outline icon"></i>
-                    </i>
-                    <h3>Online Market-place</h3>
-                    <p class="text-muted">
-                      Bringing together buyers and sellers from all over India
-                    </p>
-                  </div>
+              </div>
+              <div class="col-lg-12">
+                <div class="feature-item">
+                  <i class="large icons">
+                    <i class="credit card icon" style="border: 0;"></i>
+                  </i>
+                  <h3>Integrated Payment Gateway</h3>
+                  <p class="text-muted">
+                    Payments through a secure gateway, with cashbacks on each
+                    transaction
+                  </p>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="badges" style="text-align: center;">
+          <a class="badge-link" href="#"
+            ><img
+              src="assets/img/google-play-badge.svg?h=7d81478f4f9fda85b994e6cadcaf5c38"
+              style="width: 200px;" /></a
+          ><a class="badge-link" href="#"
+            ><img
+              src="assets/img/app-store-badge.svg?h=b09d63f535cc5e26fd9d14e7a3648880"
+              style="width: 200px;"
+          /></a>
         </div>
       </div>
     </section>
@@ -306,6 +449,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
     <script src="assets/js/new-age.js?h=cf0c6eede7253521bdfea6a9a949db9a"></script>
+    <script src="./index.js"></script>
   </body>
 </html>

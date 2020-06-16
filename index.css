@@ -2,8 +2,17 @@
   padding: 0;
 }
 
-#download {
+#vision {
   background-image: linear-gradient(#f58220, #008e97);
+  /* background-image: url("./images/double-bubble-dark.png"); */
+}
+
+#vision-container {
+  background-image: url("./images/cardboard.png");
+  opacity: 0.9;
+
+  background: linear-gradient(#f58220, #008e97);
+  background: scroll;
 }
 
 @media screen and (max-width: 834px) {
@@ -13,6 +22,44 @@
 }
 
 #content-stuff {
-  font-size: 29px;
+  font-size: 100px;
+  /* font-family: ; */
   color: #fff;
+  opacity: 1;
+}
+#text-stuff {
+  text-align: left;
+  font-size: 30px;
+  color: #ffffe1;
+  line-height: 1.8;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  opacity: 1;
+  background: scroll;
+  /* scroll-behavior: unset; */
+  -ms-zoom-animation: initial;
+}
+
+header.masthead {
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBg 15s linear infinite 1s;
+  animation-timing-function: ease;
+  /* background-image: url(./images/1.jpg); */
+}
+
+@keyframes slideBg {
+  0% {
+    background-image: url("./images/1.jpg");
+  }
+  50% {
+    background-image: url("./images/2.jpeg");
+  }
+  100% {
+    background-image: url("./images/3.png");
+  }
 }
