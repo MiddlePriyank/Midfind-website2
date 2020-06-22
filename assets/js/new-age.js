@@ -24,15 +24,15 @@
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $(".js-scroll-trigger").click(function () {
-    $(".navbar-collapse").collapse("hide");
-  });
+  // $(".js-scroll-trigger").click(function () {
+  //   $(".navbar-collapse").collapse("hide");
+  // });
 
   // Activate scrollspy to add active class to navbar items on scroll
-  $("body").scrollspy({
-    target: "#mainNav",
-    offset: 54,
-  });
+  // $("body").scrollspy({
+  //   target: "#mainNav",
+  //   offset: 54,
+  // });
 
   $(".navbar-toggler").on("click", function (e) {
     if ($(e.target).is("a")) {
