@@ -92,3 +92,26 @@ header.masthead {
     font-size: 20px;
   }
 }
+.modal-body1 {
+  background-color: #f5832000;
+  margin: auto;
+  height: 20%;
+  width: 80%;
+  text-align: center;
+}
+.modal1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  background-color: rgba(128, 128, 128, 0);
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  z-index: 11;
+}
+carousel-control-next {
+  z-index: 11;
+}
