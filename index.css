@@ -140,6 +140,7 @@ carousel-control-next {
 .title-subtext {
   /* font-size: 32px; */
   line-height: normal;
+  margin-bottom: 55px;
 }
 .title-text {
   color: black;
